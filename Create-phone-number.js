@@ -9,3 +9,11 @@ The returned format must be correct in order to complete this challenge.
 
 
 // Solution
+
+function createPhoneNumber(numbers) {
+  let format = "(xxx) xxx-xxxx";
+  for(let i = 0; i < numbers.length; i++) {
+    format = format.replace('x', numbers[i]);
+  }
+  return format;
+}
